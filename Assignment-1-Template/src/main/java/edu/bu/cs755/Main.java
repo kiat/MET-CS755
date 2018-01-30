@@ -22,6 +22,14 @@ import com.amazonaws.services.s3.model.S3Object;
 import com.amazonaws.services.s3.model.S3ObjectInputStream;
 
 public class Main {
+	
+	
+	 public static String extractText(String line){
+	        
+		 
+		 
+		 return "";
+	 }
 
 	public static void main(String[] args) {
 
@@ -53,7 +61,7 @@ public class Main {
 		
 		    
 		    Map<String, Integer> wordCount=reader.lines().parallel()
-		    		.map(line -> line.split(">")[1].replaceAll("</doc", "")) // split the line using ">" sing  
+		    		.map(line -> line.split(">")[1].replaceAll("<[^>]+>", "")) // 
 		    		.flatMap(line -> Arrays.stream(line.trim().split(" ")))
 		    		.map(word -> word.replaceAll("[^a-zA-Z]", "").toLowerCase().trim())
 		    		.filter(word -> word.length() > 0)
