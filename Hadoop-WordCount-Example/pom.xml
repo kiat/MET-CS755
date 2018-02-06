@@ -24,7 +24,7 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>edu.rice.cs.HadoopEx.WordCount</mainClass>
+							<mainClass>edu.bu.metcs.HadoopEx.WordCount</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
