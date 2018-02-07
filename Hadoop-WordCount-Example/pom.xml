@@ -34,8 +34,14 @@
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>
+					<archive>
+						<manifest>
+							<mainClass>edu.bu.metcs.HadoopEx.WordCount</mainClass>
+						</manifest>
+					</archive>
 				</configuration>
 			</plugin>
+
 		</plugins>
 	</build>
 	<dependencies>

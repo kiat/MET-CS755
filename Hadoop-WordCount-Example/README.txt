@@ -34,9 +34,22 @@ running:
 
 Create a single gar file with eclipse 
 
-File export -> export  -> export as binary -> 
+	File export -> export  -> export as binary -> 
 
-"Extract generated libraries into generated JAR"
+	"Extract generated libraries into generated JAR"
+
+
+###########################################
+##### Create a JAR Using Maven       ######
+###########################################
+
+
+# Install maven - compile 
+To compile the project and create a single jar file with all dependencies: 
+	
+	mvn clean compile assembly:single
+
+
 
 
 ##############################
